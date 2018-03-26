@@ -11,16 +11,22 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".FirstActivity"
-            android:launchMode="singleTask"
-            android:label="This is FirstActivity">
+            android:label="This is FirstActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"
-            android:label="This is SecondActivity"></activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="This is SecondActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".ThirdActivity"
+            android:label="This is thirdActivity">
+
+        </activity>
     </application>
 
 </manifest>
