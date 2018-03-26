@@ -28,8 +28,7 @@ public class SecondActivity extends BaseActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SecondActivity.this,ThirdActivity.class);
-                startActivity(intent);
+                ThirdActivity.actionStart(SecondActivity.this);
             }
         });
     }
